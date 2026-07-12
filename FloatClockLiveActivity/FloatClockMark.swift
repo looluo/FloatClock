@@ -29,9 +29,9 @@ struct FloatClockMark: View {
 
                 Path { path in
                     path.move(to: center)
-                    path.addLine(to: handEnd(from: center, angle: .degrees(-48), length: size * 0.2))
+                    path.addLine(to: handEnd(from: center, angle: .degrees(-90), length: size * 0.2))
                     path.move(to: center)
-                    path.addLine(to: handEnd(from: center, angle: .degrees(148), length: size * 0.16))
+                    path.addLine(to: handEnd(from: center, angle: .degrees(180), length: size * 0.16))
                 }
                 .stroke(.white, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
 
