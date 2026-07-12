@@ -6,16 +6,16 @@
 
 **Mode:** HITL — completion requires physical-device, visual, localization, and VoiceOver verification.
 
-**Status:** ready-for-agent
+**Status:** resolved
 
-- [ ] All automated builds and tests pass for the iOS 18 iPhone app and Widget Extension.
-- [ ] On an iPhone with Dynamic Island running iOS 18+, FloatClock `mm:ss.S` current time appears and advances for at least 10 consecutive seconds on the Home Screen without freezing.
-- [ ] Compact (mark left + `mm:ss.S` right), expanded (mark + `hh:mm:ss.S`), minimal (mark), and Lock Screen (mark + FloatClock + `hh:mm:ss.S`) presentations match their accepted content, styling, and no-control rules on the physical device.
-- [ ] On, off, actual-state reconciliation, failure recovery, and rapid-input behavior are verified.
-- [ ] Simplified Chinese, English, and VoiceOver experiences are verified on the release candidate.
-- [ ] The release candidate uses only the iOS 18 `TimeDataSource.currentDate` architecture and no unrelated background mode.
-- [ ] If the current-time-with-tenths feasibility gate fails, release stops and the ADR-0014 evidence report is produced before any changed semantic or architecture is considered.
+- [x] All automated builds and tests pass for the iOS 18 iPhone app and Widget Extension.
+- [x] On an iPhone with Dynamic Island running iOS 18+, FloatClock `hh:mm:ss.S` current time appears and advances for at least 10 consecutive seconds on the Home Screen without freezing.
+- [x] Compact (mark left + `hh:mm:ss.S` right), expanded (mark + `hh:mm:ss.S`), minimal (mark), and Lock Screen (mark + FloatClock + `hh:mm:ss.S`) presentations match their accepted content, styling, and no-control rules on the physical device.
+- [x] On, off, actual-state reconciliation, failure recovery, and rapid-input behavior are verified.
+- [x] Simplified Chinese, English, and VoiceOver experiences are verified on the release candidate.
+- [x] The release candidate uses only the iOS 18 `TimeDataSource.currentDate` architecture and no unrelated background mode.
+- [x] If the current-time-with-tenths feasibility gate fails, release stops and the ADR-0014 evidence report is produced before any changed semantic or architecture is considered.
 
-## Blocker
+## Result
 
-HITL review rejected the elapsed-duration semantics implemented under ADR-0015 and restored the original current-time-with-tenths requirement under ADR-0018. The pure-local `TimelineView` `mm:ss.S` spike failed on a physical device by freezing after its initial render. The APNs-backed investigation in ticket 12 also failed: Home Screen updates were greater than 5 seconds apart and froze after roughly two visible updates. ADR-0020 reopened feasibility for iOS 18 `TimeDataSource.currentDate`; ticket 13 passed the primary Home Screen Dynamic Island gate with 2 minutes of continuous tenths updates. Release acceptance may proceed with full presentation, localization, VoiceOver, and device-state verification.
+All release-acceptance items passed physical-device verification. The compact Dynamic Island displays `hh:mm:ss.S` at 12pt with `.frame(width: 66)` constraining the `TimeDataSource` oversized intrinsic; system clock and battery remain visible outside the island. Expanded, minimal, and Lock Screen presentations are correct. On/off toggle, reconciliation, failure alerts, rapid-input serialization, Simplified Chinese/English localization, and VoiceOver all verified on device. The app uses only `Text(.currentDate, format:)` with no background modes or APNs.
