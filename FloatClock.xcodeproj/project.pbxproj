@@ -70,9 +70,9 @@
 		8D7560B00B545AA37F57E836 /* FloatClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockController.swift; sourceTree = "<group>"; };
 		AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockWidgetBundle.swift; sourceTree = "<group>"; };
 		ABFB7866B867D114D327BB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FloatClockLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FloatClockLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockAttributes.swift; sourceTree = "<group>"; };
-		D15F304B6E48548A57D6E93C /* FloatClock.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FloatClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15F304B6E48548A57D6E93C /* FloatClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D787683405C91371063C062F /* FloatClockActivityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockActivityClient.swift; sourceTree = "<group>"; };
 		DA6EE8C67DC60265507B0976 /* FloatClockControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockControllerTests.swift; sourceTree = "<group>"; };
 		F9CA5262F8F8370C565C98D1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -311,6 +311,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +521,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

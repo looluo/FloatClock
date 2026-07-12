@@ -64,6 +64,7 @@ private struct FloatClockCompactTimeText: View {
         Text(
             .currentDate,
             format: Date.FormatStyle()
+                .hour(.twoDigits(amPM: .omitted))
                 .minute(.twoDigits)
                 .second(.twoDigits)
                 .secondFraction(.fractional(1))
@@ -72,7 +73,7 @@ private struct FloatClockCompactTimeText: View {
         .foregroundStyle(.white)
         .monospacedDigit()
         .lineLimit(1)
-        .frame(width: 56)
+        .frame(width: 66)
     }
 }
 
