@@ -67,13 +67,13 @@
         }
       }
     },
-    "Turns the FloatClock elapsed-duration Live Activity on or off." : {
+    "Turns the FloatClock current-time Live Activity on or off." : {
       "extractionState" : "manual",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开或关闭显示 FloatClock 经计时长的实时活动。"
+            "value" : "打开或关闭显示 FloatClock 当前时间的实时活动。"
           }
         }
       }

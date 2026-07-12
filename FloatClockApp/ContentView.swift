@@ -5,18 +5,22 @@ struct ContentView: View {
     @StateObject private var controller = FloatClockController()
 
     var body: some View {
-        Toggle(
-            "FloatClock",
-            isOn: Binding(
-                get: { controller.isActive },
-                set: { controller.setActive($0) }
+        VStack {
+            Spacer()
+            Toggle(
+                "FloatClock",
+                isOn: Binding(
+                    get: { controller.isActive },
+                    set: { controller.setActive($0) }
+                )
             )
-        )
-        .disabled(controller.isInFlight)
-        .tint(.floatClockAccent)
-        .accessibilityHint("Turns the FloatClock elapsed-duration Live Activity on or off.")
-        .accessibilityIdentifier("floatClockToggle")
-        .fixedSize()
+            .disabled(controller.isInFlight)
+            .tint(.floatClockAccent)
+            .accessibilityHint("Turns the FloatClock current-time Live Activity on or off.")
+            .accessibilityIdentifier("floatClockToggle")
+            .fixedSize()
+            Spacer()
+        }
         .padding()
         .task {
             controller.reconcile()

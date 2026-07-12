@@ -1,10 +1,10 @@
 # FloatClock
 
-Status: blocked-by-current-time-architecture
+Status: ready-for-release-acceptance
 
 ## Current Product Decision
 
-ADR-0018 supersedes ADR-0017, ADR-0015, and ADR-0001. FloatClock must present the device-local current system time with tenths precision (`mm:ss.S`), not elapsed duration from when the switch was turned on and not a reduced second-only current time. The existing elapsed-duration implementation is semantically wrong even though it passes the technical smoke test. The earlier pure-local wall-clock `TimelineView` spike also failed on a physical device because the Dynamic Island rendered one value and then stopped updating. Full release development is blocked until a current-time-with-tenths update architecture is selected and proven on a physical device.
+ADR-0018 and ADR-0020 define the current architecture. FloatClock presents the device-local current system time with tenths precision using iOS 18 `Text(.currentDate, format:)` with `TimeDataSource`. The compact Dynamic Island shows `mm:ss.S` (the system status bar clock outside the island provides `hh:mm`); expanded and Lock Screen presentations show the full `hh:mm:ss.S`. The earlier `TimelineView` and APNs approaches both failed physical-device feasibility; the iOS 18 `TimeDataSource` path passed a 2-minute Home Screen gate without freezing. The compact trailing `Text(.currentDate, format:)` requires `.frame(width: 56)` because the `TimeDataSource` reports an intrinsic size larger than its visible glyphs, which otherwise expands the Dynamic Island and hides system status bar items.
 
 ## Problem Statement
 
@@ -14,9 +14,9 @@ An iPhone user wants to see the device-local current system time at a glance in 
 
 Build an iPhone-only Swift app whose main screen contains one centered, labeled `FloatClock` toggle. Turning the toggle on requests one FloatClock Live Activity; turning it off ends and immediately removes all FloatClock Live Activities owned by the app. The toggle reflects actual ActivityKit state rather than a saved wish to remain on.
 
-FloatClock displays the device-local current system time, targeting the current wall-clock minute, second, and one tenths digit: `mm:ss.S`. The Dynamic Island composition follows the reference: original FloatClock mark on the left and current time on the right, including the decimal digit. The Live Activity also supplies appropriate expanded, minimal, and Lock Screen presentations. It is display-only, and tapping it opens the app.
+FloatClock displays the device-local current system time. The compact Dynamic Island shows `mm:ss.S` in the trailing region (the system status bar clock outside the island provides hours and minutes); expanded and Lock Screen presentations show the full `hh:mm:ss.S`. The Dynamic Island composition follows the reference: original FloatClock mark on the left (compactLeading) and current time on the right (compactTrailing). The Live Activity also supplies expanded, minimal, and Lock Screen presentations. It is display-only, and tapping it opens the app.
 
-Before full release development continues, select and prove a current-time-with-tenths update architecture on a physical device. The previous pure-local `TimelineView` spike failed immediately at second precision, and the elapsed-duration system timer text approach is no longer accepted product behavior.
+The current-time architecture was proven on a physical device: iOS 18 `Text(.currentDate, format: Date.FormatStyle().minute(.twoDigits).second(.twoDigits).secondFraction(.fractional(1)))` updates continuously at tenths cadence without freezing. The compact trailing text requires `.frame(width:)` to constrain the oversized intrinsic size reported by `TimeDataSource`.
 
 ## User Stories
 
@@ -76,7 +76,7 @@ Before full release development continues, select and prove a current-time-with-
 - The expanded presentation keeps the mark on the left and current time on the right. The minimal presentation shows only the mark. The Lock Screen presentation shows the mark, `FloatClock`, and current time.
 - The app can't and doesn't attempt to pin the Dynamic Island in expanded form. All presentations tolerate system-selected width and truncation behavior.
 - The Live Activity is display-only. Add no buttons, toggles, App Intents, or custom actions. Tapping it uses normal system behavior to open the app.
-- Use white system typography with monospaced digits for the `mm:ss` portion and a pink-red final tenths digit matching the reference accent.
+- Use white system typography with monospaced digits for the time. The entire time string is white; the reference's pink-red final tenths digit was dropped after HITL review confirmed the Dynamic Island rendering pipeline cannot split `Text(.currentDate, format:)` without breaking the display.
 - Let iOS provide the Dynamic Island's black shape; don't draw another pill background. Use the system app background and automatically support light and dark appearance.
 - Create an original alarm-clock mark inspired by the reference's pink-red rounded square and white clock concept. Don't use an SF Symbol or confusingly similar SF Symbol as the App Icon or brand mark. Use a full-color App Icon and a simplified small-size-safe form of the same mark in Live Activity presentations.
 - Use the same pink-red brand accent for the mark and main toggle tint.

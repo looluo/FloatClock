@@ -6,10 +6,11 @@
 
 An active Live Activity that presents the device-local current system time with tenths precision.
 
-- The display target is the device's current wall-clock minute, second, and one tenths digit: `mm:ss.S`.
-- A pure local `TimelineView` implementation failed physical-device feasibility because the Dynamic Island rendered one wall-clock value and then stopped updating.
+- The display target is the device's current wall-clock time: `mm:ss.S` in the compact Dynamic Island trailing region (the system status bar clock outside the island provides `hh:mm`); `hh:mm:ss.S` in expanded and Lock Screen presentations.
+- The time display uses iOS 18 `Text(.currentDate, format:)` with `TimeDataSource`, which updates continuously without app runtime.
+- A pure local `TimelineView` implementation failed physical-device feasibility because the Dynamic Island rendered one wall-clock value and then stopped updating; `Text(.currentDate, format:)` does not have this problem.
 - Elapsed duration from the switch-on moment is no longer accepted product behavior.
-- Full release development is blocked until a current-time-with-tenths update architecture is selected and proven on a physical device.
+- The compact trailing `Text(.currentDate, format:)` requires `.frame(width:)` because `TimeDataSource` reports an intrinsic size larger than its visible glyphs.
 
 ### FloatClock state
 

@@ -14,8 +14,6 @@
 		560C614CD7E8FF8761CBCE02 /* FloatClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F244FB413C4D606F7C35B38 /* FloatClockApp.swift */; };
 		6344BF23D0F60FEC4CF768D6 /* FloatClockMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BD9C0094CEB7AC53E5D5 /* FloatClockMark.swift */; };
 		637290042F8696CBE300D4A0 /* FloatClockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */; };
-		65ED936FD0BDAA1F56830674 /* FloatClockCurrentTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */; };
-		692F5FDF7F325A12C2FBCC0D /* FloatClockCurrentTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */; };
 		70BF6E51F9C5C63CC8353DB9 /* FloatClockBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */; };
 		7B2E04C01620EF67A8518BE8 /* FloatClockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */; };
 		AD81E5721422B1CACBB81D94 /* FloatClockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */; };
@@ -72,12 +70,11 @@
 		8D7560B00B545AA37F57E836 /* FloatClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockController.swift; sourceTree = "<group>"; };
 		AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockWidgetBundle.swift; sourceTree = "<group>"; };
 		ABFB7866B867D114D327BB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FloatClockLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FloatClockLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockAttributes.swift; sourceTree = "<group>"; };
-		D15F304B6E48548A57D6E93C /* FloatClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15F304B6E48548A57D6E93C /* FloatClock.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FloatClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D787683405C91371063C062F /* FloatClockActivityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockActivityClient.swift; sourceTree = "<group>"; };
 		DA6EE8C67DC60265507B0976 /* FloatClockControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockControllerTests.swift; sourceTree = "<group>"; };
-		E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockCurrentTimeFormatter.swift; sourceTree = "<group>"; };
 		F9CA5262F8F8370C565C98D1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		FE2A970449F8EDEB94C4EC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +106,6 @@
 			children = (
 				CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */,
 				4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */,
-				E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */,
 			);
 			path = FloatClockShared;
 			sourceTree = "<group>";
@@ -269,7 +265,6 @@
 				AD81E5721422B1CACBB81D94 /* FloatClockAttributes.swift in Sources */,
 				70BF6E51F9C5C63CC8353DB9 /* FloatClockBrand.swift in Sources */,
 				2D8242E2F134EAC137067AA6 /* FloatClockController.swift in Sources */,
-				65ED936FD0BDAA1F56830674 /* FloatClockCurrentTimeFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +274,6 @@
 			files = (
 				7B2E04C01620EF67A8518BE8 /* FloatClockAttributes.swift in Sources */,
 				193E4F09C19FC7B80BE8A1CB /* FloatClockBrand.swift in Sources */,
-				692F5FDF7F325A12C2FBCC0D /* FloatClockCurrentTimeFormatter.swift in Sources */,
 				FA695FFC84F265BB01457CB2 /* FloatClockLiveActivity.swift in Sources */,
 				6344BF23D0F60FEC4CF768D6 /* FloatClockMark.swift in Sources */,
 				637290042F8696CBE300D4A0 /* FloatClockWidgetBundle.swift in Sources */,
@@ -317,7 +311,6 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +468,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +485,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,7 +518,6 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P85T9N8C9T;
 				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

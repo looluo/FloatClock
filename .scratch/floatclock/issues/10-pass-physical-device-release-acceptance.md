@@ -8,12 +8,12 @@
 
 **Status:** ready-for-agent
 
-- [ ] All automated builds and tests pass for the iOS 17 iPhone app and Widget Extension.
-- [ ] On an iPhone 15 or later, FloatClock `mm:ss.S` current time appears and advances for at least 10 consecutive seconds on the Home Screen without freezing.
-- [ ] Compact, expanded, minimal, and Lock Screen presentations match their accepted content, styling, and no-control rules on the physical device.
+- [ ] All automated builds and tests pass for the iOS 18 iPhone app and Widget Extension.
+- [ ] On an iPhone with Dynamic Island running iOS 18+, FloatClock `mm:ss.S` current time appears and advances for at least 10 consecutive seconds on the Home Screen without freezing.
+- [ ] Compact (mark left + `mm:ss.S` right), expanded (mark + `hh:mm:ss.S`), minimal (mark), and Lock Screen (mark + FloatClock + `hh:mm:ss.S`) presentations match their accepted content, styling, and no-control rules on the physical device.
 - [ ] On, off, actual-state reconciliation, failure recovery, and rapid-input behavior are verified.
 - [ ] Simplified Chinese, English, and VoiceOver experiences are verified on the release candidate.
-- [ ] The release candidate uses only an explicitly approved current-time-with-tenths update architecture and no unrelated background mode.
+- [ ] The release candidate uses only the iOS 18 `TimeDataSource.currentDate` architecture and no unrelated background mode.
 - [ ] If the current-time-with-tenths feasibility gate fails, release stops and the ADR-0014 evidence report is produced before any changed semantic or architecture is considered.
 
 ## Blocker
