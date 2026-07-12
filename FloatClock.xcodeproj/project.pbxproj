@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA3149B1235F57CBBE07081 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556E00A8C62DA038233D4C2 /* ContentView.swift */; };
+		193E4F09C19FC7B80BE8A1CB /* FloatClockBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */; };
+		2D8242E2F134EAC137067AA6 /* FloatClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7560B00B545AA37F57E836 /* FloatClockController.swift */; };
+		4EAD9D78DAAB717B760A7150 /* FloatClockLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BDD618D955DD92FA73D42 /* FloatClockLocalizationTests.swift */; };
+		560C614CD7E8FF8761CBCE02 /* FloatClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F244FB413C4D606F7C35B38 /* FloatClockApp.swift */; };
+		6344BF23D0F60FEC4CF768D6 /* FloatClockMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BD9C0094CEB7AC53E5D5 /* FloatClockMark.swift */; };
+		637290042F8696CBE300D4A0 /* FloatClockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */; };
+		65ED936FD0BDAA1F56830674 /* FloatClockCurrentTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */; };
+		692F5FDF7F325A12C2FBCC0D /* FloatClockCurrentTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */; };
+		70BF6E51F9C5C63CC8353DB9 /* FloatClockBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */; };
+		7B2E04C01620EF67A8518BE8 /* FloatClockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */; };
+		AD81E5721422B1CACBB81D94 /* FloatClockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */; };
+		BC4FF7A07236477C12E93724 /* FloatClockLiveActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BD0D8A31259CA799F4F3E2FD /* FloatClockAttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF42FE5C6466863223B5094 /* FloatClockAttributesTests.swift */; };
+		BFD8DC9864F70AB1711DB26B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F9CA5262F8F8370C565C98D1 /* Localizable.xcstrings */; };
+		E2C251E1B49800F83BB59C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8A3C7C99C99F7EDB2060FD /* Assets.xcassets */; };
+		FA695FFC84F265BB01457CB2 /* FloatClockLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E03DFB3ADE7AB98F780DA4 /* FloatClockLiveActivity.swift */; };
+		FCAA3BE4AE1985230A9E7C92 /* FloatClockActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787683405C91371063C062F /* FloatClockActivityClient.swift */; };
+		FD0DCCEE74F7A0EEDD52539B /* FloatClockControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6EE8C67DC60265507B0976 /* FloatClockControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C9417ACEC3FBA802EC7A736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4589B2FFE2E96A6B9645A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AB71B78AF2BE599406F758;
+			remoteInfo = FloatClock;
+		};
+		D41B9097906F63B09C7D79F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4589B2FFE2E96A6B9645A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F0D01B2964B916606B6661;
+			remoteInfo = FloatClockLiveActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE3C47BBE9FE837F50F6D202 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC4FF7A07236477C12E93724 /* FloatClockLiveActivity.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08E03DFB3ADE7AB98F780DA4 /* FloatClockLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockLiveActivity.swift; sourceTree = "<group>"; };
+		0B8A3C7C99C99F7EDB2060FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		122BDD618D955DD92FA73D42 /* FloatClockLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockLocalizationTests.swift; sourceTree = "<group>"; };
+		2F244FB413C4D606F7C35B38 /* FloatClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockApp.swift; sourceTree = "<group>"; };
+		4556E00A8C62DA038233D4C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4CF42FE5C6466863223B5094 /* FloatClockAttributesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockAttributesTests.swift; sourceTree = "<group>"; };
+		4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockBrand.swift; sourceTree = "<group>"; };
+		6656BBFEDAC9286A85720ECD /* FloatClockTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FloatClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766BD9C0094CEB7AC53E5D5 /* FloatClockMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockMark.swift; sourceTree = "<group>"; };
+		8D7560B00B545AA37F57E836 /* FloatClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockController.swift; sourceTree = "<group>"; };
+		AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockWidgetBundle.swift; sourceTree = "<group>"; };
+		ABFB7866B867D114D327BB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FloatClockLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockAttributes.swift; sourceTree = "<group>"; };
+		D15F304B6E48548A57D6E93C /* FloatClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D787683405C91371063C062F /* FloatClockActivityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockActivityClient.swift; sourceTree = "<group>"; };
+		DA6EE8C67DC60265507B0976 /* FloatClockControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockControllerTests.swift; sourceTree = "<group>"; };
+		E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatClockCurrentTimeFormatter.swift; sourceTree = "<group>"; };
+		F9CA5262F8F8370C565C98D1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FE2A970449F8EDEB94C4EC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		036B3FC500D95C16C903773D /* FloatClockLiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				08E03DFB3ADE7AB98F780DA4 /* FloatClockLiveActivity.swift */,
+				7766BD9C0094CEB7AC53E5D5 /* FloatClockMark.swift */,
+				AB224526972102FEF5DB6098 /* FloatClockWidgetBundle.swift */,
+				FE2A970449F8EDEB94C4EC39 /* Info.plist */,
+			);
+			path = FloatClockLiveActivity;
+			sourceTree = "<group>";
+		};
+		28ED1A28BB7D1615CCD515D5 /* FloatClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CF42FE5C6466863223B5094 /* FloatClockAttributesTests.swift */,
+				DA6EE8C67DC60265507B0976 /* FloatClockControllerTests.swift */,
+				122BDD618D955DD92FA73D42 /* FloatClockLocalizationTests.swift */,
+			);
+			path = FloatClockTests;
+			sourceTree = "<group>";
+		};
+		612C5133F014AAEBEAD4794C /* FloatClockShared */ = {
+			isa = PBXGroup;
+			children = (
+				CFB997CCC79EDD1C2C47015B /* FloatClockAttributes.swift */,
+				4E0D75E86D318637DA0A77FD /* FloatClockBrand.swift */,
+				E50B38C64EDDA555FBF3BFF9 /* FloatClockCurrentTimeFormatter.swift */,
+			);
+			path = FloatClockShared;
+			sourceTree = "<group>";
+		};
+		877F7D50C6E035350D8D00A8 = {
+			isa = PBXGroup;
+			children = (
+				8A06E6895EC19D72BE106919 /* FloatClockApp */,
+				036B3FC500D95C16C903773D /* FloatClockLiveActivity */,
+				612C5133F014AAEBEAD4794C /* FloatClockShared */,
+				28ED1A28BB7D1615CCD515D5 /* FloatClockTests */,
+				C53BF7F23C9CCDDF978233AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A06E6895EC19D72BE106919 /* FloatClockApp */ = {
+			isa = PBXGroup;
+			children = (
+				0B8A3C7C99C99F7EDB2060FD /* Assets.xcassets */,
+				4556E00A8C62DA038233D4C2 /* ContentView.swift */,
+				D787683405C91371063C062F /* FloatClockActivityClient.swift */,
+				2F244FB413C4D606F7C35B38 /* FloatClockApp.swift */,
+				8D7560B00B545AA37F57E836 /* FloatClockController.swift */,
+				ABFB7866B867D114D327BB3D /* Info.plist */,
+				F9CA5262F8F8370C565C98D1 /* Localizable.xcstrings */,
+			);
+			path = FloatClockApp;
+			sourceTree = "<group>";
+		};
+		C53BF7F23C9CCDDF978233AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D15F304B6E48548A57D6E93C /* FloatClock.app */,
+				B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */,
+				6656BBFEDAC9286A85720ECD /* FloatClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F0D01B2964B916606B6661 /* FloatClockLiveActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 913BCB5BB199412A9B6A459B /* Build configuration list for PBXNativeTarget "FloatClockLiveActivity" */;
+			buildPhases = (
+				332979A407078063F229329B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatClockLiveActivity;
+			packageProductDependencies = (
+			);
+			productName = FloatClockLiveActivity;
+			productReference = B020F5A2E2C2A92B12EB63A2 /* FloatClockLiveActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D052E8E05E5E72057E639215 /* FloatClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FF2B6A626D718251499673 /* Build configuration list for PBXNativeTarget "FloatClockTests" */;
+			buildPhases = (
+				35A57278C06D2BED2FEFC607 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566ABF8DF9C9BD49A1D853FC /* PBXTargetDependency */,
+			);
+			name = FloatClockTests;
+			packageProductDependencies = (
+			);
+			productName = FloatClockTests;
+			productReference = 6656BBFEDAC9286A85720ECD /* FloatClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4AB71B78AF2BE599406F758 /* FloatClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A9A3A7283586C4745F944D3 /* Build configuration list for PBXNativeTarget "FloatClock" */;
+			buildPhases = (
+				1A560B58EA1C112BC2BBF421 /* Sources */,
+				857F0C47EA10EF077BFCE722 /* Resources */,
+				DE3C47BBE9FE837F50F6D202 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC595C34EF390FB4B54B2AC7 /* PBXTargetDependency */,
+			);
+			name = FloatClock;
+			packageProductDependencies = (
+			);
+			productName = FloatClock;
+			productReference = D15F304B6E48548A57D6E93C /* FloatClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B4589B2FFE2E96A6B9645A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					53F0D01B2964B916606B6661 = {
+						ProvisioningStyle = Automatic;
+					};
+					D4AB71B78AF2BE599406F758 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8FF8201CA63F3C56C0A24962 /* Build configuration list for PBXProject "FloatClock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 877F7D50C6E035350D8D00A8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C53BF7F23C9CCDDF978233AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4AB71B78AF2BE599406F758 /* FloatClock */,
+				53F0D01B2964B916606B6661 /* FloatClockLiveActivity */,
+				D052E8E05E5E72057E639215 /* FloatClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		857F0C47EA10EF077BFCE722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C251E1B49800F83BB59C25 /* Assets.xcassets in Resources */,
+				BFD8DC9864F70AB1711DB26B /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A560B58EA1C112BC2BBF421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA3149B1235F57CBBE07081 /* ContentView.swift in Sources */,
+				FCAA3BE4AE1985230A9E7C92 /* FloatClockActivityClient.swift in Sources */,
+				560C614CD7E8FF8761CBCE02 /* FloatClockApp.swift in Sources */,
+				AD81E5721422B1CACBB81D94 /* FloatClockAttributes.swift in Sources */,
+				70BF6E51F9C5C63CC8353DB9 /* FloatClockBrand.swift in Sources */,
+				2D8242E2F134EAC137067AA6 /* FloatClockController.swift in Sources */,
+				65ED936FD0BDAA1F56830674 /* FloatClockCurrentTimeFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332979A407078063F229329B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2E04C01620EF67A8518BE8 /* FloatClockAttributes.swift in Sources */,
+				193E4F09C19FC7B80BE8A1CB /* FloatClockBrand.swift in Sources */,
+				692F5FDF7F325A12C2FBCC0D /* FloatClockCurrentTimeFormatter.swift in Sources */,
+				FA695FFC84F265BB01457CB2 /* FloatClockLiveActivity.swift in Sources */,
+				6344BF23D0F60FEC4CF768D6 /* FloatClockMark.swift in Sources */,
+				637290042F8696CBE300D4A0 /* FloatClockWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A57278C06D2BED2FEFC607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0D8A31259CA799F4F3E2FD /* FloatClockAttributesTests.swift in Sources */,
+				FD0DCCEE74F7A0EEDD52539B /* FloatClockControllerTests.swift in Sources */,
+				4EAD9D78DAAB717B760A7150 /* FloatClockLocalizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		566ABF8DF9C9BD49A1D853FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AB71B78AF2BE599406F758 /* FloatClock */;
+			targetProxy = 4C9417ACEC3FBA802EC7A736 /* PBXContainerItemProxy */;
+		};
+		BC595C34EF390FB4B54B2AC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F0D01B2964B916606B6661 /* FloatClockLiveActivity */;
+			targetProxy = D41B9097906F63B09C7D79F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01379C312D80D7EC903C78F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
+				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock.LiveActivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		129DA38657BAA18678BAA302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1561427944E1005159AECB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClockTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatClock.app/FloatClock";
+			};
+			name = Debug;
+		};
+		1C53C8A11D11484327176428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		79E7E3AFB0485F2329389846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
+				INFOPLIST_FILE = FloatClockApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BE0DC1C0086799B23B92BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
+				INFOPLIST_FILE = FloatClockApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A41612078A397EC26971402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClockTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatClock.app/FloatClock";
+			};
+			name = Release;
+		};
+		B7CA3251A70640579A4545D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P85T9N8C9T;
+				INFOPLIST_FILE = FloatClockLiveActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock.LiveActivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A9A3A7283586C4745F944D3 /* Build configuration list for PBXNativeTarget "FloatClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E7E3AFB0485F2329389846 /* Debug */,
+				7BE0DC1C0086799B23B92BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FF8201CA63F3C56C0A24962 /* Build configuration list for PBXProject "FloatClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129DA38657BAA18678BAA302 /* Debug */,
+				1C53C8A11D11484327176428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		913BCB5BB199412A9B6A459B /* Build configuration list for PBXNativeTarget "FloatClockLiveActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7CA3251A70640579A4545D9 /* Debug */,
+				01379C312D80D7EC903C78F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4FF2B6A626D718251499673 /* Build configuration list for PBXNativeTarget "FloatClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1561427944E1005159AECB7C /* Debug */,
+				8A41612078A397EC26971402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B4589B2FFE2E96A6B9645A6 /* Project object */;
+}

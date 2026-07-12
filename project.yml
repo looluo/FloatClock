@@ -1,0 +1,78 @@
+name: FloatClock
+
+options:
+  bundleIdPrefix: com.looluo
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1"
+
+targets:
+  FloatClock:
+    type: application
+    platform: iOS
+    sources:
+      - path: FloatClockApp
+      - path: FloatClockShared
+    dependencies:
+      - target: FloatClockLiveActivity
+        embed: true
+    info:
+      path: FloatClockApp/Info.plist
+      properties:
+        CFBundleDisplayName: FloatClock
+        NSSupportsLiveActivities: true
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.looluo.FloatClock
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+  FloatClockLiveActivity:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: FloatClockLiveActivity
+      - path: FloatClockShared
+    info:
+      path: FloatClockLiveActivity/Info.plist
+      properties:
+        CFBundleDisplayName: FloatClock Live Activity
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.looluo.FloatClock.LiveActivity
+        CODE_SIGN_STYLE: Automatic
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+
+  FloatClockTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: FloatClockTests
+    dependencies:
+      - target: FloatClock
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.looluo.FloatClockTests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  FloatClock:
+    build:
+      targets:
+        FloatClock: all
+        FloatClockLiveActivity: all
+        FloatClockTests: [test]
+    test:
+      targets:
+        - FloatClockTests
