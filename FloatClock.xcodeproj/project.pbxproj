@@ -321,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock.LiveActivity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -401,7 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClockTests;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatClock.app/FloatClock";
 			};
 			name = Debug;
@@ -477,7 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -511,7 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClockTests;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatClock.app/FloatClock";
 			};
 			name = Release;
@@ -531,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.looluo.FloatClock.LiveActivity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
